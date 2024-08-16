@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const ibmPlexSerif = IBM_Plex_Serif({
-  subsets: ["cyrillic-ext"],
+  subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-ibm-plex-serif"
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${ibmPlexSerif.className}`}>{children}</body>
+      <body className={`${inter.className} ${ibmPlexSerif}`}>{children}</body>
     </html>
   );
 }
